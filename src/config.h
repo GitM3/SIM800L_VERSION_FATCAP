@@ -6,14 +6,18 @@
 #define SerialAT Serial1
 #define TINY_GSM_DEBUG SerialMon
 
-#define PUBLISH_TOPIC "0001/data"
+#define DEVICE_ID "SENSOR STATION XXXX" //Update
+#define PUBLISH_TOPIC "0001/data"      //Update
+
 #define SUBSCRIBE_TOPIC "0001/data"
 #define SUBSCRIBE_RESPOND_TOPIC "0001/data"
+
 #define APN "Vodacom"
-#define BROKER "test.mosquitto.org"
+#define BROKER "test.mosquitto.org" //update
 #define PORT 1883
 #define TOKEN "secret"
 #define APP_VERSION "ccfccnadblapdp7slkg0-v1"
+
 #define RELAY_PIN 0
 #define BATTERY_PIN 0
 #define READING_INTERVAL 30000

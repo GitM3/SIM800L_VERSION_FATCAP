@@ -22,7 +22,8 @@ String senor_json_data(){
     scd30.initialize();
     scd30.setAutoSelfCalibration(1);
 
-    StaticJsonDocument<436> doc; //300+8+128
+    StaticJsonDocument<448> doc; //300+8+128 + 12, see: https://arduinojson.org/v6/assistant/
+    doc["ID"] = DEVICE_ID;
     //scd30 data
     float result[3] = {0};
     if (scd30.isAvailable()) {
